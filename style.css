@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 63.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 9%;
+    background: pink;
+    box-shadow: grey;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.header .logo:hover{
+    color: green;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: black;
+}
+
+.header .navbar a:hover{
+    color: red;
+}
+
+/* Profile Start*/
+.profile{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background: url(./images/img5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.profile .content{
+    margin-left: 60px;
+    flex: 1 1 40rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.content .image{
+    margin-top: 2%;
+    flex: 1 1 20rem;
+
+}
+
+.content .image img{
+    border-radius: 50%;
+    width: 30%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(3rem);
+    }
+}
+
+.profile .content h3{
+    margin-top: 5%;
+    font-size: 5rem;
+    color: white;
+}
+
+.profile .content p{
+    font-size: 1.7rem;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Profile Ends */
+
+/* LS */
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: white;
+}
+
+.heading span{
+    color: orange;
+}
+
+.learnings{
+    min-height: 100vh;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+}
+
+.learnings .box-container{
+    margin-left: 100px;
+    margin-right: 100px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.learnings .box-container .box{
+    flex: 1 1 25rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem .1rem rgba(0, 0, 0, .1);
+    border: 5px solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius:  .5rem;
+}
+
+.learnings .box-container .box .image{
+    height: 20rem;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 8px;
+    position: absolute;
+    top: -100%; left: 0;
+    border-radius: .3rem;
+}
+
+.learnings .box-container .box .content{
+    text-align: center;
+    background: white;
+    padding: 2rem;
+}
+
+.learnings .box-container .box .content img{
+    margin: 1.5rem 0;
+    height: 80px;
+}
+
+.learnings .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.learnings .box-container .box .content p{
+    font-size: 2rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.learnings .box-container .box:hover .image{
+    top: 0;
+    left: 1;
+    right: 1;
+}
+
+.learnings .box-container .box:hover .content{
+    transform: translateY(100%);
+}
+/* LS */
+
+/* Projects Start */
+.projects{
+    min-height: 100vh;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+}
+
+.projects .box-container{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.projects .box-container .box{
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border:3px solid rgba(0, 0, 0, .3);
+    border-radius: 3rem;
+    text-align: center;
+    flex: 1 1 25rem;
+    position: relative;
+}
+
+.projects .box-container .box img{
+    height: 20rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: .3rem;
+}
+
+.projects .box-container .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+/* Projects end */
+
+/* Message me start*/
+.message{
+    min-height: 100vh;
+    background: url(./images/img7.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Message me end */
